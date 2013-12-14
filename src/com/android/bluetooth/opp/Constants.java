@@ -251,7 +251,7 @@ public class Constants {
     };
 
     /** Where we store Bluetooth received files on the external storage */
-    public static final String DEFAULT_STORE_SUBDIR = "/bluetooth";
+    public static final String DEFAULT_STORE_SUBDIR = "/Download";
 
     /**
      * Debug level logging
