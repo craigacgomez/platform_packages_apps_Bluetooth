@@ -455,7 +455,7 @@ public class BluetoothMapObexServer extends ServerRequestHandler {
         HeaderSet replyHeaders = new HeaderSet();
         BluetoothMapAppParams outAppParams = new BluetoothMapAppParams();
         BluetoothMapMessageListing outList;
-        if(folderName == null || folderName.length() == 0 ) {
+        if(folderName == null) {
             folderName = mCurrentFolder.getName();
         }
         if(appParams == null){

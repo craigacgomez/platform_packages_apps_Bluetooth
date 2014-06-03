@@ -31,7 +31,6 @@ import com.android.bluetooth.btservice.RemoteDevices.DeviceProperties;
 
 import java.util.HashMap;
 import java.util.ArrayList;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 class AdapterProperties {
     private static final boolean DBG = true;
@@ -45,7 +44,7 @@ class AdapterProperties {
     private int mScanMode;
     private int mDiscoverableTimeout;
     private ParcelUuid[] mUuids;
-    private CopyOnWriteArrayList<BluetoothDevice> mBondedDevices = new CopyOnWriteArrayList<BluetoothDevice>();
+    private ArrayList<BluetoothDevice> mBondedDevices = new ArrayList<BluetoothDevice>();
 
     private int mProfilesConnecting, mProfilesConnected, mProfilesDisconnecting;
     private HashMap<Integer, Pair<Integer, Integer>> mProfileConnectionState;
